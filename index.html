@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title>
+    <style>
+        #allDone{
+            font-size: 48px;
+        }
+        #timer{
+            display: block;
+        }
+        header{
+            background-color: grey;
+            color: ivory;
+            text-align: center;
+        }
+        h2{
+            right: 0em;
+            top: 0em;
+            font-size: 38px;
+        }
+        #First{
+            display: block;
+            font-size: 32px;
+        }
+        #Q1{
+            background-color: lightcoral;
+            display: none;
+            font-size: 32px;
+        }
+        #Q2{
+            background-color: lightseagreen;
+            font-size: 32px;
+            display: none;
+        }
+        #Q3{
+            background-color: lightsteelblue;
+            font-size: 32px;
+            display: none;
+        }
+        #Q4{
+            background-color: mediumaquamarine;
+            font-size: 32px;
+            display: none;
+        }
+        #Q5{
+            background-color: mediumpurple;
+            font-size: 32px;
+            display: none;
+        }
+        #allDone{
+            background-color: mediumvioletred;
+            display: none;
+        }
+        #Final{
+            background-color: rgb(184, 86, 204);
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="First">
+    <header>
+        <h1>Coding Quiz Challenge</h1>
+        <p>Please take the short 5 question coding Quiz!</p>
+    </header>
+    <button id="startQuiz">Start Quiz</button>
+    </div>
+     <h2><p id="timer"></p></h2>
+    <div id="Q1">
+        <p>
+            A very useful tool used during the development and debugging for printing content to the debugger is:
+        </p>
+        <ul>
+        <li><button id="Q1A">A. Console Log</button></li>
+        <li><button id="Q1B">B. JavaScipt</button></li>
+        <li><button id="Q1C">C. Loops</button></li>
+        <li><button id="Q1D">D. Terminal/Bash</button></li>
+        </ul>
+        <p id="answerQ1"></p>
+    </div>
+    <div id="Q2">
+        <p>
+           The condition in an if/else statement is enclosed within ____?
+        </p>
+        <ul>
+        <li><button id="Q2A">A. Parenthesis</button></li>
+        <li><button id="Q2B">B. Quotes</button></li>
+        <li><button id="Q2C">C. Curly Brackets</button></li>
+        <li><button id="Q2D">D. Square Brackets</button></li>
+        </ul>
+        <p id="answerQ2"></p>
+    </div>
+    <div id="Q3">
+        <p>
+           Commonly used data types DO NOT include:
+        </p>
+        <ul>
+        <li><button id="Q3A">A. Alerts</button></li>
+        <li><button id="Q3B">B. Strings</button></li>
+        <li><button id="Q3C">C. Booleans</button></li>
+        <li><button id="Q3D">D. Numbers</button></li>
+        </ul>
+        <p id="answerQ3"></p>
+    </div>
+    <div id="Q4">
+        <p>
+            Which of the below is primarily used to improve design of a webpage? 
+        </p>
+        <ul>
+      <li><button id="Q4A">A. CSS</button></li>
+      <li><button id="Q4B">B. Python</button></li>
+      <li><button id="Q4C">C. Fortran</button></li>
+      <li><button id="Q4D">D. C++</button></li>
+        </ul>
+        <p id="answerQ4"></p>
+    </div>
+    <div id="Q5">
+        <p>
+            Who invented JavaScipt?
+        </p>
+        <ul>
+        <li><button id="Q5A">A. Brendan Eich</button></li>
+        <li><button id="Q5B">B. George  Washington</button></li>
+        <li><button id="Q5C">C. Albert Enstein</button></li>
+        <li><button id="Q5D">D. Ben Wright</button></li>
+        </ul>
+        <p id="answerQ5"></p>
+    </div>
+    <div id="allDone">
+        <h3>All Done!</h3>
+        <h4> 
+            <p id="score!"></p>
+            <p>
+                Enter you initials 
+                <input type="initials" placeholder="Initials" name="initials" id="initials">
+                <button id="submitInitials">submit</button>
+                
+            </p>
+        
+
+        </h4>
+        
+    </div>
+    <div id="Final">
+        <h3>
+            High Scores
+            <ol id="listHigh">Need list here</ol>
+        </h3>
+        <p>
+            <button id="goBack">Go Back</button>
+            <button id="clearHighScore">Clear High Score</button>
+        </p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
